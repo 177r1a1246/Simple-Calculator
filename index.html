@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang ="eN" dir = "ltr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Simple Calculator -by: Sonal Toshniwal</title>
+        <link rel = "stylesheet" href ="style.css" />
+    </head>
+    <body>
+        <p align="center"><font size="7"><b>Simple Calculator</b></font></p>
+        <p align="center"><font size="4"><b>Design & Developed by: Sonal Toshniwal</b></font></p>
+        <p align="center" id ="player"><font size="5"><b>Let's make our calculation easier.</b></font></p>   
+        <table class= "calc">
+        <tr>
+            <td colspan="3" class="outputtext">
+                <input class="display-box" type="text" id="result" disabled/>
+            </td>
+            <!--clearscreen() function clear all the values-->
+        <td>
+            <input
+              class="button"
+              type="button"
+              value=" C "
+              onclick="clearScreen()"
+              style="background-color: #8a053a;"
+              >
+
+
+        </td>
+        </tr>
+<tr>
+    <!-- display() function display the value of clicked button-->
+    <td>
+        <input 
+           class = "button" type = "button" value = "1"
+           onclick = "display('1')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "2"
+           onclick = "display('2')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "3"
+           onclick = "display('3')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "/"
+           onclick = "display('/')"
+           />
+    </td>
+</tr>
+<tr>
+    <td>
+        <input 
+           class = "button" type = "button" value = "4"
+           onclick = "display('4')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "5"
+           onclick = "display('5')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "6"
+           onclick = "display('6')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "*"
+           onclick = "display('*')"
+           />
+    </td>
+</tr>
+<tr>
+    <td>
+        <input 
+           class = "button" type = "button" value = "7"
+           onclick = "display('7')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "8"
+           onclick = "display('8')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "9"
+           onclick = "display('9')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "-"
+           onclick = "display('-')"
+           />
+    </td>
+</tr>
+<tr>
+    <td>
+        <input 
+           class = "button" type = "button" value = "."
+           onclick = "display('.')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "0"
+           onclick = "display('0')"
+           />
+    </td>
+    <td>
+        <input 
+           class = "button" type = "button" value = "+"
+           onclick = "display('+')"
+           />
+    </td>
+   <td>
+        <input 
+           class = "button" type = "button" value = "="
+           onclick = "calculate()"
+           style = "background-color: #8a053f;"
+           />
+    </td>
+</tr>
+</table>
+<script type ="text/javascript" src= "index.js"> </script>
+
+    </body>
+</html>
